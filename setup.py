@@ -124,7 +124,7 @@ doc = [
     'sphinx-rtd-theme>=0.1.6',
     'Sphinx-PyPI-upload>=0.2.1'
 ]
-docker = ['docker-py>=1.6.0']
+docker = ['docker>=3.0.0']
 emr = ['boto3>=1.0.0']
 gcp_api = [
     'httplib2',
