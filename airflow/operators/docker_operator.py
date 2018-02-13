@@ -186,7 +186,7 @@ class DockerOperator(BaseOperator):
                     line = line.decode('utf-8')
                 self.logger.info(line)
 
-            exit_code = self.cli.wait(self.container['Id'])
+            exit_code = self.cli.wait(self.container['Id'])['StatusCode']
             if exit_code != 0:
                 raise AirflowException('docker container failed')
 
